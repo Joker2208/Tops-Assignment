@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+</head>
+<body>
+    <h1 align="center">Zomato</h1>
+    <fieldset align="center">
+        <form action="" method="post">
+            <div>
+             <b><label for="user">Username</label></b><br>
+            <input type="text" id="user" name="Username">
+            </div><br>
+            
+            <div>
+                <b><label for="menu">Menu</label></b><br>
+            <select name="menu" id="menu" required>
+                <option value=""></option>
+                <option value="Veg Burger">Veg Burger</option>
+                <option value="Marg Pizza">Marg Pizza</option>
+                <option value="Coke">Coke</option>
+                <option value="Brownie">Brownie</option>
+            </select>
+            </div><br>
+            
+            <div>
+            <b><label for="quantity">Quantity</label></b><br>
+            <input type="number" id="quantity" name="quantity" min="1"> <br>
+            </div><br>
+            
+            <div>
+                <b><label for="delivery">Delivery Instructions</label></b><br>
+            <textarea name="delivery" id="delivery" minlength="10" required></textarea>
+            </div><br>
+
+            <div><br>
+                <input type="submit" value="Order Now!">
+            </div><br>
+
+            <div>
+              <b><label for="order_id">Order ID</label></b><br>
+              <input type="text" id="order_id" name="order_id" value="ORD12345" disabled>
+            </div> <!'The disabled tag is used so that the user cannot make any changes as to a 
+                    field like order id because every seperate user will have a different order id and
+                    the orders can get messed up.'>
+            
+        </form>
+    </fieldset>
+    
+</body>
+</html>
