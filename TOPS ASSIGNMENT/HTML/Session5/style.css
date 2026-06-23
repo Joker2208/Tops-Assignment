@@ -1,0 +1,12 @@
+#Buy:hover{
+    background-color: yellow;
+    border-radius: 10px 10px 10px 10px;
+    font-size: larger;
+}
+
+#Buy{
+    font-size: x-large;
+}
+body{
+        text-align: center;
+}

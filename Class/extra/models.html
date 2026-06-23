@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Training - Aether Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Aether.py</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Overview</a>
+                <a href="models.html" class="nav-item active">Model Training</a>
+                <a href="scraper.html" class="nav-item">Scraper Logs</a>
+                <a href="#" class="nav-item">API Management</a>
+                <a href="#" class="nav-item">Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <p>Status: Backend Offline</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div>
+                    <h1>Model Training Logs</h1>
+                    <p class="subtitle">Neural network training parameters and loss metrics</p>
+                </div>
+                <div class="user-profile">
+                    <span class="avatar">PD</span>
+                    <span class="username">Python Dev</span>
+                </div>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="card">
+                    <h3>Current Epoch</h3>
+                    <div class="metric-value">85 / 100</div>
+                    <span class="badge warning">Training in progress...</span>
+                </div>
+                <div class="card">
+                    <h3>Learning Rate</h3>
+                    <div class="metric-value">0.001</div>
+                    <span class="badge success">Adam Optimizer</span>
+                </div>
+                <div class="card">
+                    <h3>Validation Loss</h3>
+                    <div class="metric-value">0.142</div>
+                    <span class="badge success">Decreasing</span>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <h2>Saved Model Checkpoints</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Checkpoint ID</th>
+                                <th>Framework</th>
+                                <th>Validation Accuracy</th>
+                                <th>File Size</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>chkpt_ep_80</td>
+                                <td><code>PyTorch v2.1</code></td>
+                                <td>94.2%</td>
+                                <td><span class="status-pill static-success">142 MB</span></td>
+                            </tr>
+                            <tr>
+                                <td>chkpt_ep_60</td>
+                                <td><code>PyTorch v2.1</code></td>
+                                <td>91.8%</td>
+                                <td><span class="status-pill static-success">142 MB</span></td>
+                            </tr>
+                            <tr>
+                                <td>chkpt_ep_40</td>
+                                <td><code>PyTorch v2.1</code></td>
+                                <td>86.5%</td>
+                                <td><span class="status-pill static-success">142 MB</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

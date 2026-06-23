@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraper Logs - Aether Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Aether.py</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Overview</a>
+                <a href="models.html" class="nav-item">Model Training</a>
+                <a href="scraper.html" class="nav-item active">Scraper Logs</a>
+                <a href="#" class="nav-item">API Management</a>
+                <a href="#" class="nav-item">Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <p>Status: Backend Offline</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div>
+                    <h1>Web Scraper Pipelines</h1>
+                    <p class="subtitle">Data extraction jobs and target domain health tracking</p>
+                </div>
+                <div class="user-profile">
+                    <span class="avatar">PD</span>
+                    <span class="username">Python Dev</span>
+                </div>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="card">
+                    <h3>Total Extracted</h3>
+                    <div class="metric-value">42.8k</div>
+                    <span class="badge success">Rows added to DB</span>
+                </div>
+                <div class="card">
+                    <h3>Proxy Success Rate</h3>
+                    <div class="metric-value">99.1%</div>
+                    <span class="badge success">0 Blocks detected</span>
+                </div>
+                <div class="card">
+                    <h3>Avg Request Time</h3>
+                    <div class="metric-value">320ms</div>
+                    <span class="badge success">Optimal latency</span>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <h2>Target Domain Configurations</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Target URL Domain</th>
+                                <th>Parser Engine</th>
+                                <th>Frequency</th>
+                                <th>Engine Health</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>example-shop.com/products</td>
+                                <td><code>BeautifulSoup4</code></td>
+                                <td>Hourly</td>
+                                <td><span class="status-pill static-success">Healthy</span></td>
+                            </tr>
+                            <tr>
+                                <td>dynamic-crypto-charts.org</td>
+                                <td><code>Selenium WebDriver</code></td>
+                                <td>Every 5 Min</td>
+                                <td><span class="status-pill static-success">Healthy</span></td>
+                            </tr>
+                            <tr>
+                                <td>old-forum-archive.net</td>
+                                <td><code>Scrapy Spider</code></td>
+                                <td>Daily Run</td>
+                                <td><span class="status-pill static-danger">Selector Broken</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aether Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <h2>Aether.py</h2>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item active">Overview</a>
+                <a href="models.html" class="nav-item">Model Training</a>
+                <a href="scraper.html" class="nav-item">Scraper Logs</a>
+                <a href="#" class="nav-item">API Management</a>
+                <a href="#" class="nav-item">Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <p>Status: Backend Offline</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div>
+                    <h1>System Overview</h1>
+                    <p class="subtitle">Mock tracking for Python automation & ML models</p>
+                </div>
+                <div class="user-profile">
+                    <span class="avatar">PD</span>
+                    <span class="username">Python Dev</span>
+                </div>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="card">
+                    <h3>Model Accuracy</h3>
+                    <div class="metric-value">94.2%</div>
+                    <span class="badge success">+1.2% vs yesterday</span>
+                </div>
+                <div class="card">
+                    <h3>API Requests</h3>
+                    <div class="metric-value">14,820</div>
+                    <span class="badge success">Normal load</span>
+                </div>
+                <div class="card">
+                    <h3>Active Scrapers</h3>
+                    <div class="metric-value">7 / 10</div>
+                    <span class="badge warning">3 Tasks Queued</span>
+                </div>
+                <div class="card">
+                    <h3>CPU Usage</h3>
+                    <div class="metric-value">24.5%</div>
+                    <span class="badge success">Optimal</span>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <h2>Recent Script Execution Logs</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Script Name</th>
+                                <th>Runtime</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2026-06-22 13:40</td>
+                                <td><code>ecommerce_scraper.py</code></td>
+                                <td>14.2s</td>
+                                <td><span class="status-pill static-success">Success</span></td>
+                            </tr>
+                            <tr>
+                                <td>2026-06-22 13:35</td>
+                                <td><code>data_pipeline_v2.py</code></td>
+                                <td>124.5s</td>
+                                <td><span class="status-pill static-success">Success</span></td>
+                            </tr>
+                            <tr>
+                                <td>2026-06-22 13:12</td>
+                                <td><code>linear_regression_train.py</code></td>
+                                <td>45.1s</td>
+                                <td><span class="status-pill static-danger">Failed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2026-06-22 12:45</td>
+                                <td><code>api_health_check.py</code></td>
+                                <td>1.8s</td>
+                                <td><span class="status-pill static-success">Success</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
