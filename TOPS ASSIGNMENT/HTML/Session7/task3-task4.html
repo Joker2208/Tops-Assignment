@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid{
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 40px 20px;
+        }
+
+        @media(max-width: 768px){
+            .grid{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media(max-width: 460px){
+            .grid{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+
+        
+        .product{
+            border: 3px solid red;
+            border-radius: 10px;
+        }
+
+        
+        .product img{
+            height: 300px;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        p{
+            text-align: center;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+    <div class="product">
+        <img src="kinder.jpg" alt="">
+        <p>Kinder Joy</p>
+    </div>
+    <div class="product">
+        <img src="daaru.jpg" alt="">
+        <p>Daaru Joy</p>       
+    </div>
+    <div class="product">
+        <img src="oats.jpg" alt="">
+        <p>Oats </p> 
+    </div>
+    <div class="product">
+        <img src="skitlles.jpg" alt="">
+        <p>Skittles </p> 
+    </div>
+    <div class="product">
+        <img src="fertilizer.jpg" alt="">
+        <p>Fertilizer </p> 
+    </div>
+    <div class="product">
+        <img src="fridge.png" alt="">
+        <p>Fridge</p> 
+    </div>
+    </div>
+    
+</body>
+</html>
